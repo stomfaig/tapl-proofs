@@ -1,0 +1,11 @@
+name = "tapl"
+version = "0.1.0"
+defaultTargets = ["Tapl"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "v4.29.1"
+
+[[lean_lib]]
+name = "Tapl"
