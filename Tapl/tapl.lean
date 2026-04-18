@@ -252,8 +252,7 @@ lemma step_decreases_size (t t' : Term) : Step t t' → size t' < size t := by
   intro s
   induction s with
   | ite_true | ite_false | ite_cong =>
-    simp [size]
-    linarith
+    simp [size] <;> linarith
 
 /- An artifact of our choice to define Steps
   to wrap at least one step is that
